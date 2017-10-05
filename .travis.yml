@@ -5,4 +5,4 @@ script:
 install:
 -  npm install -g firebase-tools
 after_success:
- - firebase deploy  -  project devfestperm  -  token 1/EFEs2Dilnegsg8AmcwPcbRrQ8VRhfdMrtWLd3UY3PyA
+- firebase deploy  -  project devfestperm  -  token 1/EFEs2Dilnegsg8AmcwPcbRrQ8VRhfdMrtWLd3UY3PyA
