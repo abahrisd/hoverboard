@@ -2,7 +2,15 @@ language: node_js
 node_js: 7
 script:
 - echo "Deploy!"
-install:
-- npm install -g firebase-tools
-after_success:
-- firebase deploy --project devfestperm --token 1/EFEs2Dilnegsg8AmcwPcbRrQ8VRhfdMrtWLd3UY3PyA
+# install:
+# - npm install -g firebase-tools
+# after_success:
+# - firebase deploy --project devfestperm --token 1/EFEs2Dilnegsg8AmcwPcbRrQ8VRhfdMrtWLd3UY3PyA
+# 1/t8NYo_wa-Qm-8gouXCaGoUOlr-0FBRyac5T-kzN5GajoW4JIaoPDHit3_iJz__dC 
+- provider: firebase
+   skip_cleanup: true
+   on:
+     branch: master      # on which branch trigger build
+   project: hoverboard   # Firebase project name
+   token:
+     secure: CErud1YvzTZ9uRvPIWL5zdWektNyPZ47G8FyZ9tcLn/3dHt2KbP9H3HW2ufmQjghtt6T8Cp8cCuxHbfK5ra6G6KmbjyEO0mfDPsaV1WqS/seEncguVbOCW73hr9Gb1nDRGz0YsBQMl5zirbOddWTDLbDiCxC1RESSyYkk8Se4Mwbp4b5X4zgCUMzvfTLAbo0yZj4MPBcfxS1p47pTyfVYgTrMgC+Sc/20vKFyWAulgpiGykAlrwesZThIskMT7gafwFfhOGd2NdbiT2h6yHe7NGN//yo8Rbr5lZYiTY/EV8pkDUYLsOqoefzf8skuwCSHiMjr4V4iJzsMMWks0IAdnjPO8MyTpQ7TEyary6G4E8LlAodc1PNSFB/s1DkBI2eZPfike03V6FqkOPioEtOyj4t9+INK+7DZ/UkA4GLeSKNQQz668+eM1lbMVSXCEwI5yiUEfoGqgxfNccUUETpDUy/+5OLAEUwDzWthIGVjtXYVxSaGMjNRai4gVRyfxnNDMANSVm25RgRK4vfxGBT9O6Y/DjuDKOX5BlFxU7TtAh8H/x5URkHkvgG9axGKnPzF62u+NUrs1U5p6BdMOSteD3KVfx0LrDIR3r9xH5rUKyWaUc1rsDlL0kWAC/hGfmVejH9JVfwcAkl2opS+JCYiQhzcCrHd5t68y+oeRHEtek=

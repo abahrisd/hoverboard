@@ -19,7 +19,7 @@
     "name": "hoverboard-experimental",
     "domain": "devfestperm.firebaseapp.com",
     "database": "https://devfestperm.firebaseio.com",
-    "api": "AIzaSyALDa2D7CMhK_wt2VkET1MaJuQXYVUJd2I",
+    "api": "AIzaSyC7P5rjmlKQLQDsuwizSmKUbNWiSaLkuyQ",
     "userSessionsPath": "/userSessions",
     "ratingsPath": "/ratings",
     "indexedDbSession": "hoverboard"
